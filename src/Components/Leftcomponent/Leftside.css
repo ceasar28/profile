@@ -1,0 +1,12 @@
+.left {
+  display: inline-block;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.left img {
+  border-radius: 50%;
+  border: 1px solid rgb(121, 117, 117);
+}
