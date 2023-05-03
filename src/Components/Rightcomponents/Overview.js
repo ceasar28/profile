@@ -1,6 +1,7 @@
+import "./Overview.css";
 const Overview = () => {
   return (
-    <div>
+    <div className="overview">
       <h2>Hello</h2>
       <p>
         I am passionate Software Developer with keen interest in the technology
