@@ -5,7 +5,7 @@ import Footer from "./Components/footer";
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <div className="App">
         <div className="leftside">
           <Leftside />
