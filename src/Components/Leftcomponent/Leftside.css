@@ -1,15 +1,20 @@
 .left {
+  background-color: transparent;
+  background-image: linear-gradient(
+    rgba(119, 117, 255, 0.2),
+    rgba(128, 170, 230, 0.18)
+  );
   display: inline-block;
   padding: 20px 20px;
   border-radius: 10px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
-  color: white;
+  box-shadow: 0 0 2px 2px #444242;
+  color: #222;
   text-align: center;
 }
 
 .left img {
   border-radius: 50%;
-  border: 1px solid rgb(121, 117, 117);
+  border: 1px solid #ff6dcd;
 }
 .left h2 {
   font-size: 40px;
@@ -21,7 +26,7 @@
 }
 
 .Icon {
-  color: rgb(121, 117, 117);
+  color: rgb(49, 196, 171);
   font-size: 30px;
   padding: 10px;
 }
