@@ -9,7 +9,7 @@ const Leftside = () => {
   return (
     <div className="left">
       <img src={img} alt="" />
-      <h3>Emmanuel Ekete</h3>
+      <h2>Emmanuel Ekete</h2>
       <div className="Socials">
         <a href="https://github.com/ceasar28">
           <i className="Icon">
