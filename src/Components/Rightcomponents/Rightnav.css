@@ -1,7 +1,19 @@
 .nav {
   display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  list-style: none;
+  margin-top: 0%;
 }
 
-.nav ul {
-  justify-content: flex-start;
+.nav li {
+  padding: 0px 10px 0px 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.nav li:hover {
+  background-color: rgb(121, 117, 117);
+  cursor: pointer;
+  border-radius: 5px;
 }

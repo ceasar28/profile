@@ -2,8 +2,8 @@ import "./Rightnav.css";
 
 const Rightnav = () => {
   return (
-    <div className="nav">
-      <ul>
+    <div>
+      <ul className="nav">
         <li>Overview</li>
         <li>Repository</li>
       </ul>
