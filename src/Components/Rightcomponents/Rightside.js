@@ -1,10 +1,13 @@
 import Rightnav from "./Rightnav";
 import Wrapper from "./Wrapper";
+import Overview from "./Overview";
 const Rightside = () => {
   return (
     <div>
       <Rightnav />
-      <Wrapper />
+      <Wrapper>
+        <Overview />
+      </Wrapper>
     </div>
   );
 };

@@ -1,2 +1,14 @@
-const Overview = () => {};
+const Overview = () => {
+  return (
+    <div>
+      <h2>Hello</h2>
+      <p>
+        I am passionate Software Developer with keen interest in the technology
+        driven world of possibilities. "As a first principles engineer. I want
+        to know how things work under the hood. Look at Nature and see endless
+        possibilities"
+      </p>
+    </div>
+  );
+};
 export default Overview;
