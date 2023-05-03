@@ -3,6 +3,7 @@
   background-color: #282c34;
   min-height: 100vh;
   padding: 50px 50px;
+  display: flex;
 }
 
 .App-logo {
