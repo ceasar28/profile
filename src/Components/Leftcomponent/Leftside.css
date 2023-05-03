@@ -15,6 +15,7 @@
 .left img {
   border-radius: 50%;
   border: 1px solid #ff6dcd;
+  width: 25vw;
 }
 .left h2 {
   font-size: 40px;
