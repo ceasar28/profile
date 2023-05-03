@@ -1,4 +1,4 @@
-import ".Leftside.css";
+import "./Leftside.css";
 import React from "react";
 
 const Leftside = () => {
