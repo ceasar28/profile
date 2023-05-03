@@ -13,7 +13,8 @@
 }
 
 .nav li:hover {
-  background-color: rgb(121, 117, 117);
+  background-color: rgb(49, 196, 171);
+  color: white;
   cursor: pointer;
   border-radius: 5px;
 }
