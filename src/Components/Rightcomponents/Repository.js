@@ -12,9 +12,11 @@ const Repository = (props) => {
               <RepoItem
                 key={repo.id}
                 id={repo.id}
-                title={repo.title}
-                text={repo.openingText}
-                date={repo.releaseDate}
+                name={repo.name}
+                description={repo.description}
+                date={repo.createdDate}
+                language={repo.language}
+                url={repo.url}
               />
             );
           })}

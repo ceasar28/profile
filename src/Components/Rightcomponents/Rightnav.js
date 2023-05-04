@@ -20,9 +20,11 @@ const Rightnav = (props) => {
         const transformedData = data.map((repo) => {
           return {
             id: repo.id,
-            title: repo.name,
-            openingText: repo.description,
-            releaseDate: repo.created_at,
+            name: repo.name,
+            description: repo.description,
+            createdDate: repo.created_at,
+            language: repo.language,
+            url: repo.url,
           };
         });
         props.onGetData(transformedData);

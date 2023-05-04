@@ -3,9 +3,11 @@ import "./RepoItem.css";
 const RepoItem = (props) => {
   return (
     <div>
-      <h4>{props.title}</h4>
-      <p>{props.text}</p>
+      <h4>{props.name}</h4>
+      <p>{props.decription}</p>
       <p>{props.date}</p>
+      <p>{props.language}</p>
+      <a href={props.url}>Link</a>
     </div>
   );
 };
