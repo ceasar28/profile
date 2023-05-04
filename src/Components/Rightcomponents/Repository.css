@@ -1,0 +1,11 @@
+.repo {
+  color: #222;
+  margin: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.repo h2 {
+  color: #6e97ff;
+}
