@@ -1,10 +1,15 @@
 import "./Rightnav.css";
 import { useState } from "react";
 
-const Rightnav = () => {
+const Rightnav = (props) => {
   const [movies, setMovies] = useState([]);
-  function FetchMoviesHandler() {
-    fetch("https://swapi.dev/api/films/")
+
+  function showBioHandler() {
+    return props.onchangeView(1);
+  }
+  async function FetchMoviesHandler() {
+    props.onchangeView(2);
+    await fetch("https://swapi.dev/api/films/")
       .then((response) => {
         return response.json();
       })
@@ -17,15 +22,38 @@ const Rightnav = () => {
             releaseDate: moviesData.release_date,
           };
         });
-        console.log(transformedMovies);
+        props.onGetData(transformedMovies);
+
         setMovies(transformedMovies);
       });
   }
+
+  const style =
+    props.view === 1
+      ? {
+          backgroundColor: "rgb(49, 196, 171)",
+          color: "white",
+          borderRadius: "5px",
+        }
+      : { padding: "0px 10px 0px 10px", color: "#222", fontSize: "15px" };
+  const style2 =
+    props.view === 2
+      ? {
+          backgroundColor: "rgb(49, 196, 171)",
+          color: "white",
+          borderRadius: "5px",
+        }
+      : { padding: "0px 10px 0px 10px", color: "#222", fontSize: "15px" };
+
   return (
     <div>
       <ul className="nav">
-        <li>Overview</li>
-        <li onClick={FetchMoviesHandler}>Repository</li>
+        <li onClick={showBioHandler} style={style}>
+          Bio
+        </li>
+        <li onClick={FetchMoviesHandler} style={style2}>
+          Repository
+        </li>
       </ul>
     </div>
   );
