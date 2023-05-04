@@ -9,22 +9,25 @@ const Rightnav = (props) => {
   }
   async function FetchMoviesHandler() {
     props.onchangeView(2);
-    await fetch("https://swapi.dev/api/films/")
+    // https://swapi.dev/api/films/
+
+    await fetch("https://api.github.com/users/ceasar28/repos")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        const transformedMovies = data.results.map((moviesData) => {
+        console.log(data);
+        const transformedData = data.map((repo) => {
           return {
-            id: moviesData.episode_id,
-            title: moviesData.title,
-            openingText: moviesData.opening_crawl,
-            releaseDate: moviesData.release_date,
+            id: repo.id,
+            title: repo.name,
+            openingText: repo.description,
+            releaseDate: repo.created_at,
           };
         });
-        props.onGetData(transformedMovies);
+        props.onGetData(transformedData);
 
-        setMovies(transformedMovies);
+        setMovies(transformedData);
       });
   }
 
