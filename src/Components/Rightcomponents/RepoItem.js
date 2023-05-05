@@ -2,7 +2,7 @@ import "./RepoItem.css";
 
 const RepoItem = (props) => {
   return (
-    <div>
+    <div className="item">
       <h4>{props.name}</h4>
       <p>{props.description}</p>
       <p>{props.date}</p>

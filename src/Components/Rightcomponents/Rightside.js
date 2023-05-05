@@ -7,14 +7,24 @@ const Rightside = () => {
   const [view, setView] = useState(1);
   const [apiData, setApiData] = useState([]);
   function getDataHandler(apiData) {
-    // filter the data to only get some projects and not all
-    const data = apiData.filter((data, index) => {
-      if (index === 12 || 16 || 18 || 19 || 21 || 22 || 24 || 25) {
-        return data;
+    // map the data to only get some projects and not all
+    const filteredData = [];
+    const Mapped = apiData.map((data, index) => {
+      if (
+        index === 12 ||
+        index === 16 ||
+        index === 18 ||
+        index === 19 ||
+        index === 21 ||
+        index === 22
+      ) {
+        filteredData.push(data);
+        console.log("filter", data);
       }
+      return data;
     });
-    setApiData(data);
-    console.log(data);
+    console.log(filteredData);
+    setApiData(filteredData);
   }
 
   function changeviewHandler(view) {
