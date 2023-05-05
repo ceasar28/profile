@@ -7,7 +7,7 @@ const Rightnav = (props) => {
   // to open my resume from google drive
   function showResumeHandler() {
     return window.open(
-      "https://drive.google.com/file/d/1vU9gBGKjoHUerRUpk-JXELGgcvbwD__5/view?usp=share_link"
+      "https://drive.google.com/file/d/1yuyFc91s79-YH4WLiGBRtUVWG59zxUF-/view?usp=share_link"
     );
   }
   function showBioHandler() {
