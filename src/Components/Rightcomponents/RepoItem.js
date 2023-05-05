@@ -4,7 +4,7 @@ const RepoItem = (props) => {
   return (
     <div>
       <h4>{props.name}</h4>
-      <p>{props.decription}</p>
+      <p>{props.description}</p>
       <p>{props.date}</p>
       <p>{props.language}</p>
       <a href={props.url}>Link</a>
