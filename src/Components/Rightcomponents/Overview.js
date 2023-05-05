@@ -4,16 +4,16 @@ const Overview = () => {
     <div className="overview">
       <h2>Hello</h2>
       <p>
-        I am a software developer at Foxy Labs Technology Limited, with a keen
-        interest in the technology-driven world of possibilities. I am effective
-        at learning and working on tech-related projects, which has helped me
-        gain experience in various fields. I have worked as an Embedded Software
-        Engineering Intern at the Scientific Equipment Development Institute
-        (SEDI) and Buchi West Agro Allied Services, where I wrote codes for
-        arduino embedded systems and raspberry pi for automating food processing
-        machines, developed a software for relay switch control of a grinding
-        machine, and developed an IoT monitoring software for a tomatoes
-        Hydroponics system.
+        I am a junior software developer at Foxy Labs Technology Limited, with a
+        keen interest in the technology-driven world of possibilities. I am
+        effective at learning and working on tech-related projects, which has
+        helped me gain experience in various fields. I have worked as an
+        Embedded Software Engineering Intern at the Scientific Equipment
+        Development Institute (SEDI) and Buchi West Agro Allied Services, where
+        I wrote codes for arduino embedded systems and raspberry pi for
+        automating food processing machines, developed a software for relay
+        switch control of a grinding machine, and developed an IoT monitoring
+        software for a tomatoes Hydroponics system.
       </p>
 
       <p>

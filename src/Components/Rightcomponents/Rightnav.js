@@ -4,6 +4,12 @@ import { useState } from "react";
 const Rightnav = (props) => {
   const [movies, setMovies] = useState([]);
 
+  // to open my resume from google drive
+  function showResumeHandler() {
+    return window.open(
+      "https://drive.google.com/file/d/1vU9gBGKjoHUerRUpk-JXELGgcvbwD__5/view?usp=share_link"
+    );
+  }
   function showBioHandler() {
     return props.onchangeView(1);
   }
@@ -49,7 +55,11 @@ const Rightnav = (props) => {
           borderRadius: "5px",
         }
       : { padding: "0px 10px 0px 10px", color: "#222", fontSize: "15px" };
-
+  const style3 = {
+    backgroundColor: "#ff6dcd",
+    color: "white",
+    borderRadius: "5px",
+  };
   return (
     <div>
       <ul className="nav">
@@ -58,6 +68,9 @@ const Rightnav = (props) => {
         </li>
         <li onClick={FetchMoviesHandler} style={style2}>
           Projects
+        </li>
+        <li onClick={showResumeHandler} style={style3}>
+          Resume
         </li>
       </ul>
     </div>
