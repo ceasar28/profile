@@ -17,12 +17,12 @@ const Leftside = () => {
             <RxGithubLogo />
           </i>
         </a>
-        <a href="https://github.com/ceasar28">
+        <a href="https://twitter.com/eketeUg">
           <i className="Icon">
             <AiFillTwitterCircle />
           </i>
         </a>
-        <a href="https://github.com/ceasar28">
+        <a href="https://www.linkedin.com/in/emmanuel-ekete-0656a214b">
           <i className="Icon">
             <SiLinkedin />
           </i>

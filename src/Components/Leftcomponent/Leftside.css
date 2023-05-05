@@ -31,3 +31,9 @@
   font-size: 30px;
   padding: 10px;
 }
+
+@media (max-width: 768px) {
+  .left {
+    margin: auto;
+  }
+}
