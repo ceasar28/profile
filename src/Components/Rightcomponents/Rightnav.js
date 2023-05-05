@@ -57,7 +57,7 @@ const Rightnav = (props) => {
           Bio
         </li>
         <li onClick={FetchMoviesHandler} style={style2}>
-          Repository
+          Projects
         </li>
       </ul>
     </div>

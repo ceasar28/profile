@@ -8,10 +8,11 @@ const RepoItem = (props) => {
     <div className="item">
       <h4>{props.name}</h4>
       <p>{props.description}</p>
-      <p>
+      <p className="lang">{props.language}</p>
+      <p className="date">
         {month} {day} {year}
       </p>
-      <p>{props.language}</p>
+
       <a href={props.url}>
         <i className="icon">
           <BsLink />
