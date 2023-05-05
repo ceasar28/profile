@@ -16,7 +16,9 @@ const Rightside = () => {
         index === 18 ||
         index === 19 ||
         index === 21 ||
-        index === 22
+        index === 22 ||
+        index === 24 ||
+        index === 25
       ) {
         filteredData.push(data);
         console.log("filter", data);

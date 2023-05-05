@@ -22,7 +22,7 @@ const Rightnav = (props) => {
             id: repo.id,
             name: repo.name,
             description: repo.description,
-            createdDate: repo.created_at,
+            createdDate: new Date(repo.created_at),
             language: repo.language,
             url: repo.url,
           };
