@@ -7,7 +7,12 @@ const Rightside = () => {
   const [view, setView] = useState(1);
   const [apiData, setApiData] = useState([]);
   function getDataHandler(apiData) {
-    const data = apiData;
+    // filter the data to only get some projects and not all
+    const data = apiData.filter((data, index) => {
+      if (index === 12 || 16 || 18 || 19 || 21 || 22 || 24 || 25) {
+        return data;
+      }
+    });
     setApiData(data);
     console.log(data);
   }
