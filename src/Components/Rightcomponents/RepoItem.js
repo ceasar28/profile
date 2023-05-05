@@ -12,7 +12,6 @@ const RepoItem = (props) => {
       <p className="date">
         {month} {day} {year}
       </p>
-
       <a href={props.url}>
         <i className="icon">
           <BsLink />
